@@ -17,7 +17,7 @@
 		<ul data-role="listview">
 			<li><a href="#page2">Provas</a></li>
             <li><a href="#page3">Colas</a></li>
-			<li><a href="#page4">Passar Cola</a></li>
+			<li><a href="ver.php">Passar Cola</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
@@ -27,49 +27,72 @@
 
 <div data-role="page" id="page2">
 	<div data-role="header">
-		<h1>Cadastro de cola</h1>
+		<h1>Cadastrar prova</h1>
 	</div>
 	<div data-role="content">	
 		<label for="select-choice-a" class="select">Escolha uma Materia:</label>
-<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
-    <option>Materias</option>
-    <option value="1">PORTUGUES</option>
-    <option value="2">MATEMATICA</option>
-    <option value="3">QUIMICA</option>
-    <option value="4">GEOGRAFIA</option>
-</select>
-        
+        <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+            <option>Materias</option>
+            <option value="1">PORTUGUES</option>
+            <option value="2">MATEMATICA</option>
+            <option value="3">QUIMICA</option>
+            <option value="4">GEOGRAFIA</option>
+        </select>
 		<label for="number-pattern">Numero de Questões:</label>
-		<input name="number" pattern="[0-9]*" id="number-pattern" value=				"" type="number">	
+		<input name="number" pattern="[0-9]*" id="number-pattern" value="" type="number">	
+        <input value="Cadastrar" type="button">
 	</div>
 	<div data-role="footer">
-		<h4>Colaweb</h4>
+		<h4></h4>
 	</div>
 </div>
 
 <div data-role="page" id="page3">
 	<div data-role="header">
-		<h1>Page Three</h1>
+		<h1>Lista de Provas</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+	<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Provas" data-inset="true">
+        <li><a href="#">Apple</a></li>
+        <li><a href="#">Banana</a></li>
+        <li><a href="#">Cherry</a></li>
+        <li><a href="#">Cranberry</a></li>
+        <li><a href="#">Grape</a></li>
+        <li><a href="#">Orange</a></li>
+       </ul>
 	</div>
 	<div data-role="footer">
-		<h4>Colaweb</h4>
+		<h4></h4>
 	</div>
 </div>
 
 <div data-role="page" id="page4">
 	<div data-role="header">
-		<h1>Page Four</h1>
+		<h1>Passar Gabarito</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+
 	</div>
 	<div data-role="footer">
 		<h4>ColaWeb</h4>
 	</div>
 </div>
-
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Passar Gabarito</h1>
+	</div>
+	<div data-role="content">	
+	<p>
+        <a href="#" data-role="button" data-theme="a" data-inline="true">A</a>
+        <a href="#" data-role="button" data-theme="b" data-inline="true">B</a>
+        <a href="#" data-role="button" data-theme="c" data-inline="true">C</a>
+        <a href="#" data-role="button" data-theme="d" data-inline="true">D</a>
+        <a href="#" data-role="button" data-theme="e" data-inline="true">E</a>
+	</p>
+	</div>
+	<div data-role="footer">
+		<h4>ColaWeb</h4>
+	</div>
+</div>
 </body>
 </html>
